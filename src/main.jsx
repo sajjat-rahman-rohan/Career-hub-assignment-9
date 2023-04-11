@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./components/Layout/Main";
 import Home from "./components/Home/Home";
-// import Statistics from "./components/Statistics/Statistics";
+import Statistics from "./components/Statistics/Statistics";
 // import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
 // import Blog from "./components/Blog/Blog";
 import JobDetails from "./components/JobDetails/JobDetails";
@@ -31,10 +31,10 @@ const router = createBrowserRouter([
         loader: ({ params }) =>
           fetch(`https://api.jsonbin.io/v3/b/${params.jobdetailsId}`),
       },
-      // {
-      //   path: "/statistics",
-      //   element: <Statistics></Statistics>,
-      // },
+      {
+        path: "/statistics",
+        element: <Statistics></Statistics>,
+      },
       // {
       //   path: "/appliedJobs",
       //   element: <AppliedJobs></AppliedJobs>,
