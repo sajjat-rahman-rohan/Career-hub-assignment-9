@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import "./JobDetails.css";
-import toast from "react-hot-toast";
 import { addToDb } from "../../utilities/fakedb";
+import toast from "react-hot-toast";
+import "./JobDetails.css";
 
 const JobDetails = () => {
   const job = useLoaderData();
@@ -20,20 +20,14 @@ const JobDetails = () => {
     company_name,
   } = job.record;
 
-  const jobss = job.record;
+  const [cart, setCart] = useState([]);
 
-  // const [cart, setCart] = useState([]);
-
-  // const handleAddToCart = (jobss) => {
-  //   // console.log(jobss);
-  //   // let newCart = [];
-  //   const newCart = [...cart, job];
-
-  //   setCart(newCart);
-  //   addToDb(jobss.id);
-
-  //   toast.success("Apply success! 👍", { autoClose: 500 });
-  // };
+  const handleAddToCart = (jobss) => {
+    const newCart = [...cart, job];
+    setCart(newCart);
+    addToDb(jobss.id);
+    toast.success("Apply success! 👍", { autoClose: 500 });
+  };
 
   return (
     <div>
@@ -89,7 +83,12 @@ const JobDetails = () => {
             </p>
           </div>
           <div className="apply-btn  m-2">
-            <button>Apply Now</button>
+            <button
+              className="apply"
+              onClick={() => handleAddToCart(job.record)}
+            >
+              Apply Now
+            </button>
           </div>
         </div>
       </div>
