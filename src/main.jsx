@@ -5,7 +5,7 @@ import Main from "./components/Layout/Main";
 import Home from "./components/Home/Home";
 import Statistics from "./components/Statistics/Statistics";
 // import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
-// import Blog from "./components/Blog/Blog";
+import Blog from "./components/Blog/Blog";
 import JobDetails from "./components/JobDetails/JobDetails";
 // import cartProductsLoader from "./components/loaders/cartProductsLoader";
 // import ErrorPage from "./components/ErrorPage/ErrorPage";
@@ -40,10 +40,10 @@ const router = createBrowserRouter([
       //   element: <AppliedJobs></AppliedJobs>,
       //   loader: cartProductsLoader,
       // },
-      // {
-      //   path: "/blog",
-      //   element: <Blog></Blog>,
-      // },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
+      },
     ],
   },
 ]);
