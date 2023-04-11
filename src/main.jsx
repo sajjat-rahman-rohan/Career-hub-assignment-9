@@ -4,10 +4,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./components/Layout/Main";
 import Home from "./components/Home/Home";
 import Statistics from "./components/Statistics/Statistics";
-// import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
+import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
 import Blog from "./components/Blog/Blog";
 import JobDetails from "./components/JobDetails/JobDetails";
-// import cartProductsLoader from "./components/loaders/cartProductsLoader";
+import jobsLoader from "./components/loaders/jobsLoader";
 // import ErrorPage from "./components/ErrorPage/ErrorPage";
 // import Job from "./components/Job/Job";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -35,11 +35,11 @@ const router = createBrowserRouter([
         path: "/statistics",
         element: <Statistics></Statistics>,
       },
-      // {
-      //   path: "/appliedJobs",
-      //   element: <AppliedJobs></AppliedJobs>,
-      //   loader: cartProductsLoader,
-      // },
+      {
+        path: "/appliedJobs",
+        element: <AppliedJobs></AppliedJobs>,
+        loader: jobsLoader,
+      },
       {
         path: "/blog",
         element: <Blog></Blog>,

@@ -1,0 +1,73 @@
+.review-item {
+  border: 1px solid rgb(128, 128, 128, 0.3);
+  padding: 30px;
+}
+
+.review-item img {
+  width: 200px;
+}
+.review-item .img {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 0px 20px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-details h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #474747;
+}
+
+.review-details h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #757575;
+  margin: 10px 0px;
+}
+
+.review-details .type button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  background: transparent;
+  padding: 6px 15px;
+  border-radius: 4px;
+  color: rgba(126, 144, 254, 1);
+  border: 1px solid rgba(126, 144, 254, 1);
+  margin: 0px 0px 10px;
+}
+
+.location-salary p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  color: #757575;
+  margin-bottom: 20px;
+}
+
+.heroicon {
+  height: 20px;
+  width: 20px;
+}
+.filter-btn select {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #474747;
+  padding: 12px 25px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  border: none;
+  margin: 100px 0px 10px;
+}
