@@ -5,6 +5,11 @@ import Job from "../Job/Job";
 
 const FeaturedJobs = () => {
   const jobs = useLoaderData();
+  const [showAll, setShowAll] = useState(false);
+
+  const hnadleShowAll = () => {
+    setShowAll(true);
+  };
 
   return (
     <div className="my-container text-center">
@@ -15,12 +20,12 @@ const FeaturedJobs = () => {
           need. Its your future
         </p>
         <div className="jobs mt-4">
-          {jobs.record.map((job) => (
+          {jobs.record?.slice(0, showAll ? 6 : 4).map((job) => (
             <Job key={job.id} job={job}></Job>
           ))}
         </div>
         <div className="apply-btn mt-5">
-          <button>See All Jobs</button>
+          <button onClick={hnadleShowAll}>See All Jobs</button>
         </div>
       </div>
     </div>
