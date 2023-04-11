@@ -1,0 +1,40 @@
+.single-category {
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.05) 0%,
+    rgba(152, 115, 255, 0.05) 100%
+  );
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.single-category img {
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.1) 0%,
+    rgba(152, 115, 255, 0.1) 100%
+  );
+  border-radius: 8px;
+  padding: 12px;
+  height: 60px;
+  width: 60px;
+}
+
+.single-category h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #474747;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.single-category p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #a3a3a3;
+  margin: 0;
+}

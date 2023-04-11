@@ -1,0 +1,18 @@
+.category {
+  margin: 100px 0px;
+}
+.category h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 66px;
+  color: #1a1919;
+}
+.category p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #757575;
+  margin: 10px 0px;
+}
