@@ -1,44 +1,38 @@
-// use local storage to manage cart data
-const addToDb = id => {
-    let shoppingCart = getShoppingCart();
-    // add quantity
-    const quantity = shoppingCart[id];
-    if (!quantity) {
-        shoppingCart[id] = 1;
-    }
-    else {
-        const newQuantity = quantity + 1;
-        shoppingCart[id] = newQuantity;
-    }
-    localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
-}
+// use local storage to manage Job data
+const addToDb = (id) => {
+  let AppliedJob = getAppliedJob();
+  // add quantity
+  const quantity = AppliedJob[id];
+  if (!quantity) {
+    AppliedJob[id] = 1;
+  } else {
+    const newQuantity = quantity + 1;
+    AppliedJob[id] = newQuantity;
+  }
+  localStorage.setItem("applied-job", JSON.stringify(AppliedJob));
+};
 
-const removeFromDb = id => {
-    const shoppingCart = getShoppingCart();
-    if (id in shoppingCart) {
-        delete shoppingCart[id];
-        localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
-    }
-}
+const removeFromDb = (id) => {
+  const AppliedJob = getAppliedJob();
+  if (id in AppliedJob) {
+    delete AppliedJob[id];
+    localStorage.setItem("applied-job", JSON.stringify(AppliedJob));
+  }
+};
 
-const getShoppingCart = () => {
-    let shoppingCart = {};
+const getAppliedJob = () => {
+  let AppliedJob = {};
 
-    //get the shopping cart from local storage
-    const storedCart = localStorage.getItem('shopping-cart');
-    if (storedCart) {
-        shoppingCart = JSON.parse(storedCart);
-    }
-    return shoppingCart;
-}
+  //get the applied job Job from local storage
+  const storedJob = localStorage.getItem("applied-job");
+  if (storedJob) {
+    AppliedJob = JSON.parse(storedJob);
+  }
+  return AppliedJob;
+};
 
-const deleteShoppingCart = () => {
-    localStorage.removeItem('shopping-cart');
-}
+const deleteAppliedJob = () => {
+  localStorage.removeItem("applied-job");
+};
 
-export {
-    addToDb,
-    removeFromDb,
-    getShoppingCart,
-    deleteShoppingCart
-}
+export { addToDb, removeFromDb, getAppliedJob, deleteAppliedJob };

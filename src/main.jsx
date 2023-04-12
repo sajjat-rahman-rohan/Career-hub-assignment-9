@@ -8,8 +8,7 @@ import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
 import Blog from "./components/Blog/Blog";
 import JobDetails from "./components/JobDetails/JobDetails";
 import jobsLoader from "./components/loaders/jobsLoader";
-// import ErrorPage from "./components/ErrorPage/ErrorPage";
-// import Job from "./components/Job/Job";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
@@ -17,7 +16,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

@@ -1,4 +1,4 @@
-import { getShoppingCart } from "../../utilities/fakedb";
+import { getAppliedJob } from "../../utilities/fakedb";
 
 const jobsLoader = async () => {
   // const loadedJobs = await fetch("jobs.json");
@@ -7,27 +7,27 @@ const jobsLoader = async () => {
   );
   const Jobs = await loadedJobs.json();
 
-  // if cart data is in database, you have to use async await
-  const storedCart = getShoppingCart();
-  // console.log(storedCart);
+  // if Job data is in database, you have to use async await
+  const storedJob = getAppliedJob();
+  // console.log(storedJob);
 
-  const savedCart = [];
+  const savedJob = [];
 
-  for (const id in storedCart) {
+  for (const id in storedJob) {
     const addedJob = Jobs.record.find((pd) => pd.id === id);
     if (addedJob) {
-      const quantity = storedCart[id];
+      const quantity = storedJob[id];
       addedJob.quantity = quantity;
-      savedCart.push(addedJob);
+      savedJob.push(addedJob);
     }
   }
 
   // if you need to send two things
-  // return [Jobs, savedCart]
+  // return [Jobs, savedJob]
   // another options
-  // return { Jobs, cart: savedCart }
+  // return { Jobs, Job: savedJob }
 
-  return savedCart;
+  return savedJob;
   // return Jobs;
 };
 
