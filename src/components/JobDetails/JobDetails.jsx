@@ -34,7 +34,7 @@ const JobDetails = () => {
       <div className="nav-banner job-detail text-center">
         <h2>Job Details</h2>
       </div>
-      <div className="my-container job-details  mt-5">
+      <div className="my-container chart job-details  mt-5">
         <div>
           <p>
             <span>Job Description:</span> {job_discription}
