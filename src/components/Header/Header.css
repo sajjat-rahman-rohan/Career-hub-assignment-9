@@ -51,3 +51,21 @@ nav ul {
   border: none;
   color: #ffffff;
 }
+
+@media screen and (max-width: 576px) {
+  .nav-banner {
+    text-align: center;
+  }
+  .nav-banner ul {
+    margin: 20px 0px;
+  }
+  .logo img {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  nav a {
+    font-size: 16px;
+  }
+}

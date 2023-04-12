@@ -5,7 +5,7 @@ const SingleCategory = ({ category }) => {
   const { id, icon, name, title } = category;
   return (
     <div>
-      <div className="single-category">
+      <div className="single-category ">
         <img src={icon} alt="" />
         <h3>{name}</h3>
         <p>{title}</p>

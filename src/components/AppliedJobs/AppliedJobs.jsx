@@ -50,7 +50,7 @@ const AppliedJobs = () => {
       </div>
       <div className="my-container chart">
         <div className="review-container">
-          <div className="filter-btn d-flex gap-4 justify-content-end">
+          <div className="filter-btn d-sm-flex gap-4 justify-content-lg-end justify-content-center">
             <select
               id="brand-input"
               value={selectedJobType}

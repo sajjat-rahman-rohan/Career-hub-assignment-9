@@ -7,12 +7,12 @@ const Header = () => {
   return (
     <div className="nav-banner">
       <div className="my-container">
-        <nav className="d-flex justify-content-between align-items-center">
+        <nav className="d-md-flex  justify-content-between align-items-center">
           <div className="logo">
             <img src={headerLogo} alt="" />
           </div>
 
-          <ul className="d-flex">
+          <ul className="d-flex justify-content-center align-items-center">
             <li>
               <NavLink
                 to="/"

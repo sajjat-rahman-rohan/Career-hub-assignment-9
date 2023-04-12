@@ -71,3 +71,12 @@
   border: none;
   margin: 100px 0px 10px;
 }
+
+@media screen and (max-width: 576px) {
+  .filter-btn select {
+    margin: 10px 0px 10px;
+  }
+  .filter-btn {
+    margin-left: 50px;
+  }
+}

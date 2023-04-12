@@ -19,7 +19,7 @@ const Category = () => {
           Explore thousands of job opportunities with all the information you
           need. Its your future
         </p>
-        <div className="d-flex justify-content-between align-items-center text-start mt-4">
+        <div className="d-md-flex justify-content-between  align-items-center text-start mt-4">
           {categorys.map((category) => (
             <SingleCategory
               key={category.id}

@@ -34,7 +34,7 @@ const Blog = () => {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3" className="item">
-            <Accordion.Header>3. What is useref in reac.</Accordion.Header>
+            <Accordion.Header>3. What is useref in React.</Accordion.Header>
             <Accordion.Body>
               useRef() only returns one item. It returns an Object called
               current . When we initialize useRef we set the initial value:

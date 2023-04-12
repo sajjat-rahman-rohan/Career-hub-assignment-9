@@ -8,8 +8,8 @@ const JobReview = ({ applied }) => {
     applied;
 
   return (
-    <div className=" d-flex justify-content-between align-items-center review-item my-4">
-      <div className=" d-flex align-items-center gap-5 ">
+    <div className=" d-md-flex justify-content-between align-items-center review-item my-4">
+      <div className=" d-md-flex  align-items-center gap-5 ">
         <div className="img">
           <img src={logo} alt="" />
         </div>

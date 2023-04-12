@@ -16,3 +16,10 @@
   color: #757575;
   margin: 10px 0px;
 }
+
+@media screen and (max-width: 320px) {
+  .category h2 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+}

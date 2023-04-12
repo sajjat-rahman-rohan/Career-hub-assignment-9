@@ -19,3 +19,21 @@
   width: 80%;
   margin: 24px 0px 32px 0px;
 }
+
+@media screen and (max-width: 768px) {
+  .banner-text h2,
+  .banner-text p {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .banner-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .banner-text h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}

@@ -5,9 +5,9 @@ import "./Banner.css";
 const Banner = () => {
   return (
     <div className="nav-bannerr pt-3">
-      <div className="my-container d-flex justify-content-between align-items-center">
+      <div className="my-container">
         <div className="row">
-          <div className="col-6 banner-text mt-5">
+          <div className="col-lg-6 banner-text mt-5">
             <h2>
               One Step Closer To Your <span>Dream Job</span>
             </h2>
@@ -20,7 +20,7 @@ const Banner = () => {
               <button>Get Started</button>
             </div>
           </div>
-          <div className="col-6 banner-img">
+          <div className="col-lg-6 banner-img">
             <img src={logo} className="img-fluid" alt="" />
           </div>
         </div>

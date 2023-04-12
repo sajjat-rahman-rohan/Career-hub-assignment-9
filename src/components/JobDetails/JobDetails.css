@@ -54,3 +54,9 @@
 .apply {
   width: 100%;
 }
+
+@media screen and (max-width: 576px) {
+  .job-details {
+    grid-template-columns: 1fr;
+  }
+}

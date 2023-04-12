@@ -39,3 +39,18 @@ p,
 .chart {
   margin: 0px 0px 100px;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+  .footer {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
