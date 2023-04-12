@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./FeaturedJobs.css";
 import { useLoaderData } from "react-router-dom";
 import Job from "../Job/Job";
+import Button from "../Button/Button";
 
 const FeaturedJobs = () => {
   const jobs = useLoaderData();
@@ -25,7 +26,11 @@ const FeaturedJobs = () => {
           ))}
         </div>
         <div className="apply-btn mt-5">
-          <button onClick={hnadleShowAll}>See All Jobs</button>
+          {!showAll && (
+            <span onClick={hnadleShowAll}>
+              <Button>See All Jobs</Button>
+            </span>
+          )}
         </div>
       </div>
     </div>
